@@ -1,0 +1,208 @@
+@import url('https://fonts.googleapis.com/css2?family=Alegreya:wght@400;500&family=Nunito:wght@400;500;600&display=swap');
+
+.mt-center {
+    margin: 0 auto;
+}
+
+header h2 {
+    font-family: 'Alegreya', serif;
+    font-size: 1.25rem;
+    margin: 0;
+}
+
+header a {
+    color: #555;
+    font-family: 'Nunito', serif;
+    font-weight: 600;
+    text-decoration: none;
+    transition: .2s;
+}
+
+header a:hover {
+    color: #bebebe;
+}
+
+section h2 {
+    font-family: 'Alegreya', serif;
+    font-size: 2.75rem;
+    text-align: center;
+}
+
+img {
+    width: 100%;
+}
+
+.pblock-5 { padding-block: 5rem; }
+
+.pblock-025 { padding-block: 2.5rem; }
+
+.pblock-015 { padding-block: 1.5rem; }
+
+.mt-10 { margin-top: 10rem; }
+
+section.hero {
+    background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url('../images/hero.jpg');
+    background-repeat: no-repeat;
+    height: 60vh;
+}
+
+section.hero form {
+    align-items: center;
+    display: flex;
+    height: 60vh;
+    justify-content: center;
+    margin: 0 auto;
+    width: 40%;
+}
+
+section.hero * > {
+    align-items: center;
+}
+
+section.hero form .input-group input,
+section.hero form .input-group button {
+    background: rgba(255, 255, 255, 0.2);
+    border-radius: 4rem;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(5px);
+    -webkit-backdrop-filter: blur(5px);
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    font-size: 1.5rem;
+}
+
+section.hero form .input-group input {
+    color: #fff;
+    padding: 1rem 2rem;
+}
+
+section.hero form .input-group>.form-control:focus {
+    z-index: unset;
+}
+
+section.hero form .input-group input::placeholder {
+    color: #bebebe;
+    text-align: center;
+}
+
+section.hero form .input-group button {
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    border-radius: 4rem;
+    font-size: 1.5rem;
+    margin-left: 1.5rem;
+    padding-inline: 1.5rem;
+}
+
+section.hero form ion-icon {
+    color: #555;
+}
+
+section.books a {
+    border: 1px solid rgb(230, 230, 230);
+    padding: 0.5rem;
+}
+
+section.books a h3 {
+    color: #1a202c;
+    font-family: 'Alegreya', serif;
+    font-size: 1.25rem;
+    font-weight: 500;
+}
+
+section.books a p {
+    color: #555555;
+    font-style: italic;
+    font-size: 0.9rem;
+    font-weight: 400;
+}
+
+section.books a h6 {
+    color: #1a202c;
+}
+
+section.newsletters article {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+}
+
+section.newsletters img {
+    width: 100%;
+}
+
+section.newsletters .newsletter-form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 2rem;
+}
+
+section.newsletters .newsletter-form h2 {
+    text-align: left;
+}
+
+section.newsletters .newsletter-form p {
+    color: #555;
+    font-family: 'Alegreya', serif;
+}
+
+section.newsletters form input {
+    border: 1px solid #bebebe;
+    border-radius: 2rem;
+    color: #555;
+    font-size: 1.25rem;
+    padding: 0.3rem 1.5rem;
+}
+
+section.newsletters form input::placeholder {
+    font-size: 1.25rem;
+}
+
+section.newsletters form button {
+    border: 1px solid #bebebe;
+    border-radius: 2rem;
+    background-color: #bebebe;
+    color: #fff;
+    font-size: 1.1rem;
+    margin-left: 1rem;
+    padding: 0.3rem 1.5rem;
+    transition: .2s;
+}
+
+section.newsletters form button:hover {
+    background-color: #fff;
+    color: #bebebe;
+}
+
+section.newsletters form ion-icon {
+    color: #fff;
+}
+
+section.newsletters form button:hover ion-icon {
+    color: #bebebe;
+}
+
+section.book-page table td:first-child {
+    font-weight: 500;
+}
+
+footer p,
+footer a {
+    color: #555;
+    font-family: 'Alegreya', serif;
+    font-size: 1rem;
+    font-weight: 500;
+    text-decoration: none;
+    transition: .2s;
+}
+
+footer ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+footer ul li {
+    margin-block: 1rem;
+}
+
+footer a:hover {
+    color: #bebebe;
+}
