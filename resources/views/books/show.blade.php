@@ -43,12 +43,18 @@
                         </tbody>
                     </table>
                     <div class="book-options d-flex">
+                        @auth
+                        @if(auth()->user()->can('update: book'))
                         <a class="btn me-3 btn-primary" href="{{ route('books.edit', $book->id) }}">Edit</a>
+                        @endif
+                        @if(auth()->user()->can('delete: book'))
                         <form action="{{ route('books.destroy', $book['id']) }}" method="POST">
                             @csrf
                             @method('DELETE')
                             <button class="btn btn-danger" type="submit">Delete</button>
                         </form>
+                        @endif
+                        @endauth
                     </div>
                 </div>
             @endforeach

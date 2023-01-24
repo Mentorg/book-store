@@ -26,6 +26,7 @@ class BookController extends Controller
 
     public function create()
     {
+        $this->authorize('create: book');
         return view('books.create');
     }
 
@@ -41,6 +42,7 @@ class BookController extends Controller
 
     public function edit(Book $book)
     {
+        $this->authorize('update: book');
         return view('books.edit', compact('book'));
     }
 
@@ -51,6 +53,7 @@ class BookController extends Controller
 
     public function destroy(Book $book)
     {
+        $this->authorize('delete: book');
         return redirect('/')->with([$this->bookService->delete($book->id), $book]);
     }
 }
